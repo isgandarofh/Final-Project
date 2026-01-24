@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: lato;
+  background-color: #121212;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./assets/fonts/font/Lato-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./assets/fonts/font/Lato-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./assets/fonts/font/Lato-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./assets/fonts/font/Lato-Black.ttf);
+  font-weight: 900;
+}
