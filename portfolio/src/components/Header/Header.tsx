@@ -1,16 +1,26 @@
 import "../../css/header.css"
 import menuIcon from "../../assets/img/icons8-menu-50 (2).png"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 import { motion, AnimatePresence } from "motion/react"
 
 export default function Header() {
+    const [open, setOpen] = useState(false);
+    const headerRef = useRef<HTMLHeadingElement>(null);
 
-    const [open, setOpen] = useState(false)
+    useEffect(()=>{
+        document.addEventListener('scroll', ()=>{
+            if(window.scrollY > 100){
+                headerRef.current?.classList.add('sticky')
+            }  else{
+                  headerRef.current?.classList.remove('sticky')
+            }
+        })
+    }, [])
 
     return (
         <>
-            <header>
+            <header ref={headerRef}>
                 <div className="container">
                     <div className="header-content">
                         <div className="header-logo">

@@ -5,6 +5,10 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+header.sticky{
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
 }
