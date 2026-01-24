@@ -7,8 +7,6 @@ export default function Header() {
 
     const [open, setOpen] = useState(false)
 
-
-
     return (
         <>
             <header>
@@ -33,6 +31,7 @@ export default function Header() {
                             onClick={() => setOpen(!open)}>
                             <img src={menuIcon} alt="" />
                         </div>
+                        {open && <div onClick={() => setOpen(false)} className="dropdown-menu-overlay"></div>}
                         {open && (
                             <div className="dropdown-menu">
                                 <ul>
@@ -43,7 +42,6 @@ export default function Header() {
                                 </ul>
                             </div>
                         )}
-
                     </div>
                 </div>
             </header>
