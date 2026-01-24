@@ -2,6 +2,7 @@ import "../../css/header.css"
 import menuIcon from "../../assets/img/icons8-menu-50 (2).png"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { motion, AnimatePresence } from "motion/react"
 
 export default function Header() {
 
@@ -32,16 +33,22 @@ export default function Header() {
                             <img src={menuIcon} alt="" />
                         </div>
                         {open && <div onClick={() => setOpen(false)} className="dropdown-menu-overlay"></div>}
-                        {open && (
-                            <div className="dropdown-menu">
+                        <AnimatePresence>
+                            {open && <motion.div key="box" 
+                            initial={{ opacity: 0, y: '-20px' }}  
+                            animate={{ opacity: 1, y:0 }}
+                            exit={{ opacity: 0, x: '-20px' }} 
+                            className="dropdown-menu">
                                 <ul>
                                     <li><Link to="">Services</Link></li>
                                     <li><Link to="">About me</Link></li>
                                     <li><Link to="">Portfolio</Link></li>
                                     <li><Link to="">Contact me</Link></li>
                                 </ul>
-                            </div>
-                        )}
+                            </motion.div>}
+                        </AnimatePresence>
+
+
                     </div>
                 </div>
             </header>
