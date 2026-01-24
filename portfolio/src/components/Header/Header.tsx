@@ -32,7 +32,7 @@ export default function Header() {
                             onClick={() => setOpen(!open)}>
                             <img src={menuIcon} alt="" />
                         </div>
-                        {open && <div onClick={() => setOpen(false)} className="dropdown-menu-overlay"></div>}
+                        <div onClick={() => setOpen(false)} className={`dropdown-menu-overlay ${open ? 'open' : ''}`}></div>
                         <AnimatePresence>
                             {open && <motion.div key="box" 
                             initial={{ opacity: 0, y: '-20px' }}  
