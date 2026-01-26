@@ -34,10 +34,10 @@ export default function Header() {
                         <div className="header-menu">
                             <ul>
                                 <li><Link className="header-menu-active" to="/">{t("Home")}</Link></li>
-                                <li><Link to="">Services</Link></li>
-                                <li><Link to="">About me</Link></li>
-                                <li><Link to="">Portfolio</Link></li>
-                                <li><Link to="">Contact me</Link></li>
+                                <li><Link to="">{t("Services")}</Link></li>
+                                <li><Link to="">{t("About me")}</Link></li>
+                                <li><Link to="">{t("Portfolio")}</Link></li>
+                                <li><Link to="">{t("Contact me")}</Link></li>
                                 <LngChange />
                             </ul>
                         </div>
