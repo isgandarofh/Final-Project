@@ -5,18 +5,26 @@ import linkedinLogo from "../assets/img/linkedin-logo.svg"
 import brauzerLogo from "../assets/img/brauzer-logo.svg"
 import behanceLogo from "../assets/img/behance-logo.svg"
 import profilePhoto from "../assets/img/Man in black suit looking confident.png"
+import HireMeButton from "../UI/HireMeButton"
+import { useTranslation } from "react-i18next"
 
 export default function FirstSection() {
+
+    const {t} = useTranslation()
     return (
         <>
             <section className="first-section">
                 <div className="container">
                     <div className="first-section-content">
                         <div className="first-section-text">
-                            <p>Hi I am</p>
+
+                            <p>{t('Hi I am')}</p>
                             <h3>Aga Isgenderov</h3>
                             <img id="first-section-org-bg" src={headerTextBg} alt="" />
-                            <h1>FRONT END <br />Developer</h1>
+                            
+                                <h1>{t('FRONT END')} <br />{t('Developer')}</h1>
+                            
+                            
                             <div className="social-media">
                                 <div className="social-media-box">
                                     <img src={instaLogo} alt="" />
@@ -32,21 +40,21 @@ export default function FirstSection() {
                                 </div>
                             </div>
                             <div className="first-section-buttons">
-                                <button>Hire Me</button>
-                                <button>Downlead CV</button>
+                                <HireMeButton/>
+                                <button>{t('download cv')}</button>
                             </div>
                             <div className="first-section-job-info">
                                 <div className="first-section-job-info-box">
                                     <h3>5+</h3>
-                                    <h4>Experiences</h4>
+                                    <h4>{t("Experiences")}</h4>
                                 </div>
                                 <div className="first-section-job-info-box">
                                     <h3>20+</h3>
-                                    <h4>Project done</h4>
+                                    <h4>{t("Project done")}</h4>
                                 </div>
                                 <div className="first-section-job-info-box">
                                     <h3>80+</h3>
-                                    <h4>Happy Clients</h4>
+                                    <h4>{t("Happy Clients")}</h4>
                                 </div>
                             </div>
                         </div>
