@@ -40,6 +40,36 @@
   flex: 1 0 0;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.04);
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.services-card img {
+  transition: transform 0.3s ease;
+}
+
+.services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  background-color: #fd6f00;
+}
+
+.services-card:hover img {
+  transform: scale(1.15) rotate(3deg);
+    filter: brightness(0) invert(1); 
+  transform: scale(1.15) rotate(3deg);
+}
+
+.services-card:hover span {
+  color: #ffffff; 
+}
+
+.services-card:hover p {
+  color: rgba(255, 255, 255, 0.9); 
 }
 
 .services-card span {
@@ -61,3 +91,4 @@
   line-height: 160%; /* 32px */
   letter-spacing: 0.6px;
 }
+

@@ -7,6 +7,7 @@ import behanceLogo from "../assets/img/behance-logo.svg"
 import profilePhoto from "../assets/img/Man in black suit looking confident.png"
 import HireMeButton from "../UI/HireMeButton"
 import { useTranslation } from "react-i18next"
+import SocialMedia from "./SocialMedia"
 
 export default function FirstSection() {
 
@@ -22,23 +23,10 @@ export default function FirstSection() {
                             <h3>Aga Isgenderov</h3>
                             <img id="first-section-org-bg" src={headerTextBg} alt="" />
                             
-                                <h1>{t('FRONT END')} <br />{t('Developer')}</h1>
+                                <h1>FRONT END <br />Developer</h1>
                             
                             
-                            <div className="social-media">
-                                <div className="social-media-box">
-                                    <img src={instaLogo} alt="" />
-                                </div>
-                                <div className="social-media-box">
-                                    <img src={linkedinLogo} alt="" />
-                                </div>
-                                <div className="social-media-box">
-                                    <img src={brauzerLogo} alt="" />
-                                </div>
-                                <div className="social-media-box">
-                                    <img src={behanceLogo} alt="" />
-                                </div>
-                            </div>
+                            <SocialMedia/>
                             <div className="first-section-buttons">
                                 <HireMeButton/>
                                 <button>{t('download cv')}</button>

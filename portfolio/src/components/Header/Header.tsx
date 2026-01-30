@@ -1,7 +1,7 @@
 import "../../css/header.css"
 import menuIcon from "../../assets/img/icons8-menu-50 (2).png"
 import { useEffect, useRef, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { motion, AnimatePresence } from "motion/react"
 import HireMeButton from "../../UI/HireMeButton"
 import LngChange from "./LngChange"
@@ -33,14 +33,28 @@ export default function Header() {
                         </div>
                         <div className="header-menu">
                             <ul>
-                                <li><Link className="header-menu-active" to="/">{t("Home")}</Link></li>
-                                <li><Link to="">{t("Services")}</Link></li>
-                                <li><Link to="">{t("About me")}</Link></li>
-                                <li><Link to="">{t("Portfolio")}</Link></li>
-                                <li><Link to="">{t("Contact me")}</Link></li>
-                                <LngChange />
+                                <li><NavLink className={({ isActive }) =>
+                                    isActive ? "nav-link active" : "nav-link"
+                                } to="/" end>{t("Home")}</NavLink></li>
+
+                                <li><NavLink className={({ isActive }) =>
+                                    isActive ? "nav-link active" : "nav-link"
+                                } to="/services">{t("Services")}</NavLink></li>
+
+                                <li><NavLink className={({ isActive }) =>
+                                    isActive ? "nav-link active" : "nav-link"
+                                } to="/about-me">{t("About me")}</NavLink></li>
+
+                                <li><NavLink className={({ isActive }) =>
+                                    isActive ? "nav-link active" : "nav-link"
+                                } to="portfolio">{t("Portfolio")}</NavLink></li>
+                                
+                                <li><NavLink className={({ isActive }) =>
+                                    isActive ? "nav-link active" : "nav-link"
+                                } to="contact-me">{t("Contact me")}</NavLink></li>
                             </ul>
                         </div>
+                                <LngChange />
                         <div className="header-button">
                             <HireMeButton />
                         </div>

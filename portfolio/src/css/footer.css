@@ -1,0 +1,92 @@
+footer {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 40px 0px 25px 0px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  display: inline-flex;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-social {
+  margin-top: 50px;
+}
+
+.footer-header ul {
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.footer-header ul li a {
+  text-decoration: none;
+  color: var(--foundation-white-dark-hover, #959595);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.footer-header ul li a:hover {
+  color: #fd6f00;
+  transition: 0.2s;
+}
+
+.footer-contact {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-contact p {
+  color: var(--foundation-white-dark-hover, #959595);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.footer-email,
+.footer-number {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-finish-text {
+  margin-top: 50px;
+  color: var(--foundation-white-dark-active, #707070);
+  text-align: justify;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  display: flex;
+  padding: 16px 120px 0 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--foundation-white-dark-active, #707070);
+}
