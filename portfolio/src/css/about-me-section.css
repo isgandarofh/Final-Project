@@ -1,0 +1,135 @@
+.about-section {
+  padding-top: 150px;
+}
+
+.about-title h2 {
+  color: var(--Foundation-White-Light, #fefefe);
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.about-title p {
+  margin-top: 18px;
+  color: var(--foundation-white-dark-active, #707070);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+}
+
+.about-center {
+  display: flex;
+  gap: 145px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-center-img-bg {
+  margin-top: 170px;
+  width: 523px;
+  height: 676px;
+  flex-shrink: 0;
+  border-radius: 261.5px 261.5px 12px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  position: relative;
+}
+
+.about-center-img-bg img {
+  position: absolute;
+  bottom: 0px;
+  left: -15px;
+}
+
+.about-center-text{
+    margin-top: 100px;
+}
+
+.about-center-text p {
+  color: var(--foundation-white-dark-hover, #959595);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%; /* 38px */
+}
+
+.about-center-text button {
+  margin-top: 50px;
+  display: flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(
+    --Gradint,
+    linear-gradient(94deg, #fd6f00 3.1%, #e46400 94.54%)
+  );
+  color: #fff;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  border: 1px solid #fd6f00;
+  cursor: pointer;
+}
+.about-statistic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-statistic-card {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.about-statistic-card h4 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(
+    --Gradint,
+    linear-gradient(94deg, #fd6f00 3.1%, #e46400 94.54%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 24px;
+}
+
+.about-statistic-card span {
+  color: var(--foundation-white-dark-hover, #959595);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 8px;
+}
+
+
+.skill-circle {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.skill-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
