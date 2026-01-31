@@ -1,14 +1,14 @@
 {
-    "download cv" : "Скачать CV",
-    "Hi I am" : "Привет, я",
-    "Hire Me" : "Нанять меня",
-    "Home" : "Главная",
-    "Services": "Услуги",
-    "About me" : "Обо мне",
-    "Portfolio": "Портфолио",
-    "Contact me" : "Связаться со мной",
-    "Experiences" : "Опыт",
-    "Project done" : "Завершённый проект",
-    "Happy Clients" : "Довольные клиенты"
+  "download cv": "Скачать CV",
+  "Hi I am": "Привет, я",
+  "Hire Me": "Нанять меня",
+  "Home": "Главная",
+  "Services": "Услуги",
+  "About me": "Обо мне",
+  "Portfolio": "Портфолио",
+  "Contact me": "Связаться со мной",
+  "Experiences": "Опыт",
+  "Project done": "Завершённый проект",
+  "Happy Clients": "Довольные клиенты",
+  "about-desc": "Frontend-разработчик, сосредоточенный на React и TypeScript, с вниманием к дизайну UI/UX с использованием Figma. Я создаю адаптивные, современные и ориентированные на пользователя веб-приложения."
 }
-
