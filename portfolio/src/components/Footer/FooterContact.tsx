@@ -8,7 +8,7 @@ export default function FooterContact() {
             </div>
             <div className="footer-number">
                 <img src="assets/img/phone-number.svg" alt="" />
-                <p>+93 729 107 005</p>
+                <p>+994 99 727 7077</p>
             </div>
         </div>
     )

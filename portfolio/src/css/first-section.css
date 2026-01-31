@@ -192,20 +192,79 @@
 }
 
 @media (max-width: 1300px) {
-    .first-section-grey-bg{
-        width: 500px;
-        height: 500px;
-    }
-    .first-section-img img{
-        width: 420px;
-    }
+  .first-section-grey-bg {
+    width: 500px;
+    height: 500px;
+  }
+  .first-section-img img {
+    width: 420px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .first-section-grey-bg{
-        display: none;
-    }
-    .first-section-img{
-        display: none;
-    }
+  .first-section-grey-bg {
+    display: none;
+  }
+  .first-section-img {
+    display: none;
+  }
+  .first-section-content {
+    justify-content: center;
+  }
+
+  .first-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-section-text h3 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  .first-section-text p {
+    font-size: 38px;
+  }
+
+  .first-section-text h1 {
+    text-align: center;
+    font-size: 80px;
+  }
 }
+
+@media (max-width: 768px) {
+  .first-section-text #first-section-org-bg{
+    display: none;
+  }
+}
+
+@media (max-width : 576px) {
+  .first-section-text h3 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .first-section-text p {
+    font-size: 25px;
+  }
+
+  .first-section-text h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .first-section-buttons button{
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+  .first-section-buttons :first-child {
+    padding: 8px 25px;
+    font-size: 15px;
+  }
+
+  .first-section-job-info{
+    
+  }
+}
+

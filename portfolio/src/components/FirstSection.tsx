@@ -1,9 +1,5 @@
 import "../css/first-section.css"
 import headerTextBg from  "../assets/img/first-section-org-bg.svg"
-import instaLogo from "../assets/img/insta-logo.svg"
-import linkedinLogo from "../assets/img/linkedin-logo.svg"
-import brauzerLogo from "../assets/img/brauzer-logo.svg"
-import behanceLogo from "../assets/img/behance-logo.svg"
 import profilePhoto from "../assets/img/Man in black suit looking confident.png"
 import HireMeButton from "../UI/HireMeButton"
 import { useTranslation } from "react-i18next"
@@ -22,10 +18,7 @@ export default function FirstSection() {
                             <p>{t('Hi I am')}</p>
                             <h3>Aga Isgenderov</h3>
                             <img id="first-section-org-bg" src={headerTextBg} alt="" />
-                            
                                 <h1>FRONT END <br />Developer</h1>
-                            
-                            
                             <SocialMedia/>
                             <div className="first-section-buttons">
                                 <HireMeButton/>

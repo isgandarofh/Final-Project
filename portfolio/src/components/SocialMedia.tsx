@@ -2,6 +2,7 @@ import instaLogo from "../assets/img/insta-logo.svg"
 import linkedinLogo from "../assets/img/linkedin-logo.svg"
 import brauzerLogo from "../assets/img/brauzer-logo.svg"
 import behanceLogo from "../assets/img/behance-logo.svg"
+import "../css/social-media.css"
 
 
 export default function SocialMedia() {

@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import FooterContact from "./FooterContact";
 import "../../css/footer.css"
 import SocialMedia from "../SocialMedia";
+import { useTranslation } from "react-i18next";
 
 
 export default function Footer() {
+
+        const { t } = useTranslation()
     return (
         <footer>
             <div className="container">
@@ -14,14 +17,14 @@ export default function Footer() {
                     </div>
                     <div className="footer-header">
                         <ul>
-                            <li><Link to="">Home</Link></li>
-                            <li><Link to="">Services</Link></li>
-                            <li><Link to="">About me</Link></li>
-                            <li><Link to="">Portfolio</Link></li>
-                            <li><Link to="">Contact me</Link></li>
-                        </ul>
+                                        <li><Link to="/">{t("Home")}</Link></li>
+                                        <li><Link to="/services">{t("Services")}</Link></li>
+                                        <li><Link to="/about-me">{t("About me")}</Link></li>
+                                        <li><Link to="portfolio">{t("Portfolio")}</Link></li>
+                                        <li><Link to="contact-me">{t("Contact me")}</Link></li>
+                                    </ul>
                     </div>
-                    <SocialMedia/>
+                    <SocialMedia />
                     <FooterContact />
                     <div className="footer-finish-text">
                         Made by @isgandarofh Front End Developer

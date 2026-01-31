@@ -202,6 +202,7 @@ select option {
   }
    .lng-change{
     display: block !important;
+    margin-left: 480px;
    }
 
   .header-menu-icon {
@@ -211,5 +212,18 @@ select option {
 
   .dropdown-menu {
     display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .lng-change{
+    margin-left: 300px;
+  }
+}
+
+@media (max-width : 576px) {
+  .lng-change{
+    margin-left: 0px;
   }
 }

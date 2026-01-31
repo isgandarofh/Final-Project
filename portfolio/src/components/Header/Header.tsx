@@ -48,13 +48,13 @@ export default function Header() {
                                 <li><NavLink className={({ isActive }) =>
                                     isActive ? "nav-link active" : "nav-link"
                                 } to="portfolio">{t("Portfolio")}</NavLink></li>
-                                
+
                                 <li><NavLink className={({ isActive }) =>
                                     isActive ? "nav-link active" : "nav-link"
                                 } to="contact-me">{t("Contact me")}</NavLink></li>
                             </ul>
                         </div>
-                                <LngChange />
+                        <LngChange />
                         <div className="header-button">
                             <HireMeButton />
                         </div>
@@ -70,10 +70,13 @@ export default function Header() {
                                 exit={{ opacity: 0, x: '-20px' }}
                                 className="dropdown-menu">
                                 <ul>
-                                    <li><Link to="">Services</Link></li>
-                                    <li><Link to="">About me</Link></li>
-                                    <li><Link to="">Portfolio</Link></li>
-                                    <li><Link to="">Contact me</Link></li>
+                                    <ul>
+                                        <li><Link to="/">{t("Home")}</Link></li>
+                                        <li><Link to="/services">{t("Services")}</Link></li>
+                                        <li><Link to="/about-me">{t("About me")}</Link></li>
+                                        <li><Link to="portfolio">{t("Portfolio")}</Link></li>
+                                        <li><Link to="contact-me">{t("Contact me")}</Link></li>
+                                    </ul>
                                 </ul>
                             </motion.div>}
                         </AnimatePresence>

@@ -15,3 +15,25 @@
   justify-content: center;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .social-media-box {
+    width: 65px;
+    height: 65px;
+  }
+
+  .social-media-box img{
+    width: 38px;
+  }
+}
+
+@media (max-width : 576px) {
+  .social-media-box {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-media-box img{
+    width: 20px;
+  }
+}
