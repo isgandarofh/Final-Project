@@ -82,6 +82,18 @@
   border: 1px solid #fd6f00;
   cursor: pointer;
 }
+
+.about-center-text button {
+  transition: 0.8s
+
+}
+
+.about-center-text button:hover {
+  background: transparent;
+  color: #fd6f00;
+  border: 1px solid #fd6f00;
+}
+
 .about-statistic {
   display: flex;
   justify-content: space-between;
