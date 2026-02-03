@@ -19,10 +19,10 @@ export default function AboutText() {
                 becomes a noble pursuit, unraveling the mysteries hidden within
                 the tangled webs of code. designs.In this digital atelier.
             </p>
-            <button>
+            <a href="/data/test.pdf" target="_blank">
                 <img src={downloadIcon} alt="" />
                 Download CV
-            </button>
+            </a>
         </div>
     )
 }

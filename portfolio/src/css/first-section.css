@@ -5,7 +5,7 @@
 
 .first-section-content {
   position: relative;
-  top: 70px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -148,6 +148,10 @@
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
   margin-top: 80px;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: max-content;
+  flex-grow: 1;
 }
 
 .first-section-job-info-box {
@@ -184,12 +188,12 @@
   border: none;
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .first-section {
     padding-left: 60px;
     padding-right: 60px;
   }
-}
+} */
 
 @media (max-width: 1300px) {
   .first-section-grey-bg {
@@ -202,6 +206,11 @@
 }
 
 @media (max-width: 1024px) {
+
+  .first-section-job-info{
+    margin: 80px auto 0  auto;
+  }
+
   .first-section-grey-bg {
     display: none;
   }
@@ -234,6 +243,9 @@
 }
 
 @media (max-width: 768px) {
+    .first-section-job-info{
+    width: 100%;
+  }
   .first-section-text #first-section-org-bg{
     display: none;
   }

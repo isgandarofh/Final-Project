@@ -21,6 +21,18 @@ export default function TechStackBanner() {
                             <img src={tech.logo} alt="logo" />
                         </div>
                     ))}
+
+                       {Array(5).fill(techStack).flat().map((tech, index) => (
+                        <div key={index} className="tech-card">
+                            <img src={tech.logo} alt="logo" />
+                        </div>
+                    ))}
+
+                       {Array(5).fill(techStack).flat().map((tech, index) => (
+                        <div key={index} className="tech-card">
+                            <img src={tech.logo} alt="logo" />
+                        </div>
+                    ))}
                 </div>
 
             </section>

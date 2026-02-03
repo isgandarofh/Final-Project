@@ -19,7 +19,8 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
+  /* 32px */
   letter-spacing: 0.6px;
   text-transform: capitalize;
 }
@@ -47,8 +48,8 @@
   left: -15px;
 }
 
-.about-center-text{
-    margin-top: 100px;
+.about-center-text {
+  margin-top: 100px;
 }
 
 .about-center-text p {
@@ -57,10 +58,12 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 190%; /* 38px */
+  line-height: 190%;
+  /* 38px */
 }
 
-.about-center-text button {
+.about-center-text button,
+.about-center-text a {
   margin-top: 50px;
   display: flex;
   padding: 12px 30px;
@@ -68,10 +71,8 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  background: var(
-    --Gradint,
-    linear-gradient(94deg, #fd6f00 3.1%, #e46400 94.54%)
-  );
+  background: var(--Gradint,
+      linear-gradient(94deg, #fd6f00 3.1%, #e46400 94.54%));
   color: #fff;
   text-align: justify;
   font-size: 20px;
@@ -81,14 +82,13 @@
   letter-spacing: 0.6px;
   border: 1px solid #fd6f00;
   cursor: pointer;
+  transition: 0.8s;
+  text-decoration: none;
 }
 
-.about-center-text button {
-  transition: 0.8s
 
-}
-
-.about-center-text button:hover {
+.about-center-text button:hover,
+.about-center-text a:hover {
   background: transparent;
   color: #fd6f00;
   border: 1px solid #fd6f00;
@@ -104,7 +104,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .about-statistic-card h4 {
@@ -112,10 +112,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: var(
-    --Gradint,
-    linear-gradient(94deg, #fd6f00 3.1%, #e46400 94.54%)
-  );
+  background: var(--Gradint,
+      linear-gradient(94deg, #fd6f00 3.1%, #e46400 94.54%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

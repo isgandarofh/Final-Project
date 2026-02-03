@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-body {
-  font-family: lato;
-  background-color: #121212;
-}
-
 @font-face {
   font-family: lato;
   src: url(./assets/fonts/font/Lato-Light.ttf);
@@ -34,6 +24,53 @@ body {
 
 @font-face {
   font-family: lato;
-  src: url(./assets/fonts/font/Lato-Black.ttf);
+  src: url('./assets/fonts/font/Lato-Black.ttf');
   font-weight: 900;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: lato;
+  background-color: #121212;
+}
+.skill-circle{
+  overflow: hidden;
+}
+
+/* 
+
+.skill-circle img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+} */
+
+  .only-mobile{
+    display: none;
+  }
+
+  @media only screen and (max-width:1300px) {
+    .container{
+      padding: 0 40px;
+    }
+  }
+
+@media only screen and (max-width:1024px){
+  .only-desktop{
+    display: none;
+  }
+
+  .only-mobile{
+    display: block;
+  }
+
+  .right-action{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }

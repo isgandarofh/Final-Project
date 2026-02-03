@@ -54,14 +54,22 @@ export default function Header() {
                                 } to="contact-me">{t("Contact me")}</NavLink></li>
                             </ul>
                         </div>
-                        <LngChange />
+                        <div className="only-desktop">
+                            <LngChange />
+                        </div>
                         <div className="header-button">
                             <HireMeButton />
                         </div>
-                        <div className="header-menu-icon"
-                            onClick={() => setOpen(!open)}>
-                            <img src={menuIcon} alt="" />
+                        <div className="right-action">
+                            <div className="only-mobile">
+                                <LngChange />
+                            </div>
+                            <div className="header-menu-icon"
+                                onClick={() => setOpen(!open)}>
+                                <img src={menuIcon} alt="" />
+                            </div>
                         </div>
+
                         <div onClick={() => setOpen(false)} className={`dropdown-menu-overlay ${open ? 'open' : ''}`}></div>
                         <AnimatePresence>
                             {open && <motion.div key="box"

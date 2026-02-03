@@ -12,7 +12,11 @@
 .techstack-track {
   display: flex;
   gap: 70px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
+}
+
+.techstack-track:hover{
+  animation-play-state: paused;
 }
 
 @keyframes scroll {

@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <FirstSection/>
-      <ServicesSection/>
-      <AboutMeSection/>
+      {/* <ServicesSection/>
+      <AboutMeSection/> */}
     </>
   )
 }
