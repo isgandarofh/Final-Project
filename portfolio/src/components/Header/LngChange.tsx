@@ -1,6 +1,5 @@
 
 import { useTranslation } from "react-i18next";
-import Cookies from "js-cookie";
 
 export default function LngChange() {
 
@@ -9,7 +8,6 @@ export default function LngChange() {
     const {i18n} = useTranslation()
 
     const changeLanguage = (value:string)=>{
-            Cookies.set("language", `${value}`);
             i18n.changeLanguage(value) 
     }
     return (

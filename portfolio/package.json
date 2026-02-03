@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "i18next": "^25.8.0",
+    "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",
     "js-cookie": "^3.0.5",
     "motion": "^12.29.0",
