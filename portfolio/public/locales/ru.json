@@ -10,5 +10,12 @@
   "Experiences": "Опыт",
   "Project done": "Завершённый проект",
   "Happy Clients": "Довольные клиенты",
-  "about-desc": "Frontend-разработчик, сосредоточенный на React и TypeScript, с вниманием к дизайну UI/UX с использованием Figma. Я создаю адаптивные, современные и ориентированные на пользователя веб-приложения."
+  "about-desc": "Frontend-разработчик, сосредоточенный на React и TypeScript, с вниманием к дизайну UI/UX с использованием Figma. Я создаю адаптивные, современные и ориентированные на пользователя веб-приложения.",
+  "services-info-desc" : "Я предоставляю высококачественные frontend-решения для современных веб-интерфейсов и пользовательских опытов. Каждый проект сосредоточен на адаптивном дизайне, производительности и чистом, поддерживаемом коде.",
+  "About My Services" : "О моих услугах",
+  "Frontend Development (React, TypeScript, Tailwind)" : "Frontend-разработка (React, TypeScript, Tailwind)",
+  "UI/UX Design (Figma, prototyping)" : "UI/UX Дизайн (Figma, прототипирование)",
+  "Responsive Web Design (Mobile & Desktop)" : "Адаптивный веб-дизайн (Мобильные & Десктоп)",
+  "Code Optimization və Performance" : "Оптимизация кода и производительность",
+  "Frontend solutions tailored to your needs" : "Frontend-решения, адаптированные под ваши нужды"
 }

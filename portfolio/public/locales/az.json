@@ -11,5 +11,12 @@
     "Experiences": "Təcrübələr",
     "Project done" : "Tamamlanmış layihə",
     "Happy Clients" : "Məmnun Müştərilər",
-    "about-desc" : "React və TypeScript-ə fokuslanmış Frontend developer-əm, Figma ilə UI/UX dizaynına güclü diqqət göstərirəm. Mən responsive, müasir və istifadəçi mərkəzli veb tətbiqlər yaradıram"
+    "about-desc" : "React və TypeScript-ə fokuslanmış Frontend developer-əm, Figma ilə UI/UX dizaynına güclü diqqət göstərirəm. Mən responsive, müasir və istifadəçi mərkəzli veb tətbiqlər yaradıram",
+    "services-info-desc" : "Mən müasir veb interfeyslər və istifadəçi təcrübələri üçün yüksək keyfiyyətli frontend həllər təqdim edirəm. Hər bir layihə responsive dizayn, performans və təmiz, saxlanması asan kod üzərində fokuslanır.",
+    "About My Services" : "Xidmətlərim haqqında",
+    "Frontend Development (React, TypeScript, Tailwind)" : "Frontend İnkişafı (React, TypeScript, Tailwind)",
+    "UI/UX Design (Figma, prototyping)" : "UI/UX Dizaynı (Figma, prototipləşdirmə)",
+    "Responsive Web Design (Mobile & Desktop)" : "Responsive Veb Dizayn (Mobil & Desktop)",
+    "Code Optimization və Performance" : "Kodun Optimallaşdırılması və Performans",
+    "Frontend solutions tailored to your needs" : "Sənin ehtiyaclarına uyğun frontend həllər"
 }

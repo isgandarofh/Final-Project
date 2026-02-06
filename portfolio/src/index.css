@@ -28,6 +28,8 @@
   font-weight: 900;
 }
 
+
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,15 +42,6 @@ body {
 .skill-circle{
   overflow: hidden;
 }
-
-/* 
-
-.skill-circle img{
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-} */
-
   .only-mobile{
     display: none;
   }

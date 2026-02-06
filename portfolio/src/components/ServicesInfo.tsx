@@ -1,6 +1,8 @@
 import "../css/services-info.css"
 import servicesInfoPhoto from "../assets/img/frontendphoto.png"
+import { useTranslation } from "react-i18next"
 export default function ServicesInfo() {
+  const {t} = useTranslation()
   return (
     <>
       <section className="services-info-section">
@@ -8,17 +10,18 @@ export default function ServicesInfo() {
           <img src={servicesInfoPhoto} alt="Services Illustration" />
         </div>
         <div className="services-info-right">
-          <h2>About My Services</h2>
+          <h2>{t("About My Services")}</h2>
           <p>
-            I provide high-quality frontend solutions for modern web interfaces 
-      and user experiences. Every project focuses on responsive design, 
-      performance, and clean, maintainable code.
+            {
+              t("services-info-desc")
+            }
+            
           </p>
           <ul>
-            <li>Frontend Development (React, TypeScript, Tailwind)</li>
-            <li>UI/UX Design (Figma, prototyping)</li>
-            <li>Responsive Web Design (Mobile & Desktop)</li>
-            <li>Code Optimization və Performance</li>
+            <li>{t("Frontend Development (React, TypeScript, Tailwind)")}</li>
+            <li>{t("UI/UX Design (Figma, prototyping)")}</li>
+            <li>{t("Responsive Web Design (Mobile & Desktop)")}</li>
+            <li>{t("Code Optimization və Performance")}</li>
           </ul>
         </div>
       </section>

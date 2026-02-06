@@ -10,5 +10,12 @@
   "Experiences": "Experiences",
   "Project done": "Project done",
   "Happy Clients": "Happy Clients",
-  "about-desc": "Frontend developer focused on React and TypeScript, with a strong eye for UI/UX design using Figma. I create responsive, modern, and user-centered web applications."
+  "about-desc": "Frontend developer focused on React and TypeScript, with a strong eye for UI/UX design using Figma. I create responsive, modern, and user-centered web applications.",
+  "services-info-desc" : "I provide high-quality frontend solutions for modern web interfaces and user experiences. Every project focuses on responsive design,  performance, and clean, maintainable code.",
+  "About My Services" : "About My Services",
+  "Frontend Development (React, TypeScript, Tailwind)" : "Frontend Development (React, TypeScript, Tailwind)",
+  "UI/UX Design (Figma, prototyping)" : "UI/UX Design (Figma, prototyping)",
+  "Responsive Web Design (Mobile & Desktop)" : "Responsive Web Design (Mobile & Desktop)",
+  "Code Optimization və Performance" : "Code Optimization və Performance",
+  "Frontend solutions tailored to your needs" : "Frontend solutions tailored to your needs"
 }
