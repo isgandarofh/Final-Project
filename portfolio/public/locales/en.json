@@ -11,11 +11,12 @@
   "Project done": "Project done",
   "Happy Clients": "Happy Clients",
   "about-desc": "Frontend developer focused on React and TypeScript, with a strong eye for UI/UX design using Figma. I create responsive, modern, and user-centered web applications.",
-  "services-info-desc" : "I provide high-quality frontend solutions for modern web interfaces and user experiences. Every project focuses on responsive design,  performance, and clean, maintainable code.",
-  "About My Services" : "About My Services",
-  "Frontend Development (React, TypeScript, Tailwind)" : "Frontend Development (React, TypeScript, Tailwind)",
-  "UI/UX Design (Figma, prototyping)" : "UI/UX Design (Figma, prototyping)",
-  "Responsive Web Design (Mobile & Desktop)" : "Responsive Web Design (Mobile & Desktop)",
-  "Code Optimization və Performance" : "Code Optimization və Performance",
-  "Frontend solutions tailored to your needs" : "Frontend solutions tailored to your needs"
+  "services-info-desc": "I provide high-quality frontend solutions for modern web interfaces and user experiences. Every project focuses on responsive design,  performance, and clean, maintainable code.",
+  "About My Services": "About My Services",
+  "Frontend Development (React, TypeScript, Tailwind)": "Frontend Development (React, TypeScript, Tailwind)",
+  "UI/UX Design (Figma, prototyping)": "UI/UX Design (Figma, prototyping)",
+  "Responsive Web Design (Mobile & Desktop)": "Responsive Web Design (Mobile & Desktop)",
+  "Code Optimization və Performance": "Code Optimization və Performance",
+  "Frontend solutions tailored to your needs": "Frontend solutions tailored to your needs",
+  "about-me-info-paragraph": "I’m a passionate Frontend Developer who focuses on building modern, responsive, and user-friendly web applications.I enjoy creating clean and interactive interfaces that not only look great but also provide a smooth experience for users across all devices.I work with technologies such as React, TypeScript, Tailwind CSS, and modern frontend tools to turn ideas into functional digital products.From landing pages to full-scale web applications, I always pay attention to performance, design consistency, and clean code structure.I’m constantly learning new technologies, improving my skills, and staying up to date with modern web trends.My goal is to deliver high-quality solutions that help businesses grow and users enjoy their online experience."
 }

@@ -188,12 +188,7 @@
   border: none;
 }
 
-/* @media (max-width: 1400px) {
-  .first-section {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-} */
+
 
 @media (max-width: 1300px) {
   .first-section-grey-bg {
@@ -273,10 +268,6 @@
   .first-section-buttons :first-child {
     padding: 8px 25px;
     font-size: 15px;
-  }
-
-  .first-section-job-info{
-    
   }
 }
 
