@@ -143,3 +143,32 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width : 1200px) {
+  .about-center{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .about-center-text{
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-statistic{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+  }
+
+  .about-center-img-bg{
+    width: 320px;
+  height: 470px;
+  margin-top: 30px;
+  }
+
+  .about-center-img-bg img{
+    width: 320px;
+    left: 10px;
+  }
+}
