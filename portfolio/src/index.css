@@ -46,6 +46,16 @@ body {
     display: none;
   }
 
+  .page-title{
+        color: var(--Foundation-White-Light, #fefefe);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+
   @media only screen and (max-width:1300px) {
     .container{
       padding: 0 40px;

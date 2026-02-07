@@ -6,7 +6,7 @@ type PageTitleType = {
 export default function PageTitle({title} : PageTitleType) {
   return (
     <>
-          <h2>{title}</h2>
+          <h2 className="page-title">{title}</h2>
     </>
   )
 }
