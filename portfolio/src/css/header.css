@@ -163,12 +163,29 @@ header.sticky {
   pointer-events: auto;
 }
 
+.lng-change-pranet{
+  position: relative;
+}
+
+.select-icon{
+  position: absolute;
+  right: 8px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.select-icon svg{
+  color: #fff;
+}
+
 select {
+  width: 55px;
+  appearance: none;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  padding: 6px 10px 6px 10px;
+  padding: 6px;
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
