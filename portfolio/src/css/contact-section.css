@@ -28,10 +28,8 @@
 .contact-inputs {
   margin-top: 50px;
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .contact-inputs input {
@@ -108,9 +106,9 @@
 
 .contact-inputs button {
   margin-top: 30px;
-  display: flex;
+  /* display: flex; */
   padding: 12px 40px;
-  justify-content: end;
+  /* justify-content: end; */
   gap: 10px;
   border-radius: 8px;
   border: 2px solid var(--foundation-white-dark-hover, #959595);
@@ -123,19 +121,30 @@
   line-height: normal;
   letter-spacing: 0.6px;
   cursor: pointer;
-  margin-left: 870px;
+  /* margin-left: auto; */
+  /* margin-left: 870px; */
+}
+
+.contact-from-btn{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact-section-bottom {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  /* align-items: flex-end; */
 }
 
+.form-group{
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
 .contact-select-icon {
   position: absolute;
   pointer-events: none;
-  right: 40px;
+  right: 20px;
   top: 50%;
   transform: translateY(-40%);
 }
