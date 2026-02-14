@@ -45,13 +45,8 @@ export default function Header() {
                                     isActive ? "nav-link active" : "nav-link"
                                 } to="/about-me">{t("About me")}</NavLink></li>
 
-                                <li><NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to="portfolio">{t("Portfolio")}</NavLink></li>
-
-                                <li><NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to="contact-me">{t("Contact me")}</NavLink></li>
+                                <li><a href="/#portfolio">{t("Portfolio")}</a></li>
+                                <li><a href="/#contact-me">{t("Contact me")}</a></li>
                             </ul>
                         </div>
                         <div className="only-desktop">

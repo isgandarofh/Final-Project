@@ -1,6 +1,8 @@
 
 import AboutMeSection from "../components/AboutSection/AboutMeSection";
+import ContactSection from "../components/ContactSection/ContactSection";
 import FirstSection from "../components/FirstSection";
+import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
       <FirstSection/>
       <ServicesSection/>
       <AboutMeSection/>
+      <PortfolioSection/>
+      <ContactSection/>
     </>
   )
 }

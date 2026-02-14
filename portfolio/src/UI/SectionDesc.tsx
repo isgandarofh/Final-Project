@@ -5,7 +5,7 @@ type SectionDescType = {
 
 export default function SectionDesc({desc} : SectionDescType) {
     return (
-        <p>
+        <p className="section-desc">
             {desc}
         </p>
     )

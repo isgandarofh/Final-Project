@@ -163,7 +163,7 @@ header.sticky {
   pointer-events: auto;
 }
 
-.lng-change-pranet{
+.lng-change-parent{
   position: relative;
 }
 
@@ -172,6 +172,7 @@ header.sticky {
   right: 8px;
   top: 55%;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .select-icon svg{

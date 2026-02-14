@@ -8,7 +8,7 @@ export default function AboutMe() {
       <div className="container">
         <AboutMeInfo />
       </div>
-
+      
     </>
   )
 }
