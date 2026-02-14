@@ -6,12 +6,23 @@ import { motion, AnimatePresence } from "motion/react"
 import HireMeButton from "../../UI/HireMeButton"
 import LngChange from "./LngChange"
 import { useTranslation } from "react-i18next"
+import { useLocation } from 'react-router-dom'
 
 export default function Header() {
     const [open, setOpen] = useState(false);
     const headerRef = useRef<HTMLHeadingElement>(null);
+    const { t } = useTranslation();
+    const location = useLocation();
 
-    const { t } = useTranslation()
+    const generateActiveClassWithHome = (search: string) => {
+        
+        switch (search) {
+            case location.search:
+                return 'nav-link';
+                default:
+                    return ""
+        }
+    }
 
     useEffect(() => {
         document.addEventListener('scroll', () => {
@@ -33,31 +44,19 @@ export default function Header() {
                         </div>
                         <div className="header-menu">
                             <ul>
-                                <li><NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to="/" end>{t("Home")}</NavLink></li>
+                                <li><NavLink className={generateActiveClassWithHome('')} to="/" end>{t("Home")}</NavLink></li>
 
-                                <li><NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to="/services">{t("Services")}</NavLink></li>
+                                <li><NavLink className={'nav-link'} to="/services">{t("Services")}</NavLink></li>
 
-                                <li><NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to="/about-me">{t("About me")}</NavLink></li>
+                                <li><NavLink className={'nav-link'} to="/about-me">{t("About me")}</NavLink></li>
 
                                 <li>
-                                    <NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to={'/?portfolio=true'}>
+                                    <NavLink className={generateActiveClassWithHome('?portfolio=true')} to={'/?portfolio=true'}>
                                         {t("Portfolio")}
                                     </NavLink>
                                 </li>
-
-
                                 <li>
-                                    <NavLink className={({ isActive }) =>
-                                    isActive ? "nav-link active" : "nav-link"
-                                } to={'/?contact=true'}>
+                                    <NavLink className={generateActiveClassWithHome('?contact=true')} to={'/?contact=true'}>
                                         {t("Contact me")}
                                     </NavLink>
                                 </li>
