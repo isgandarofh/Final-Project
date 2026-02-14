@@ -7,7 +7,7 @@ import portfolioProjectsImg3 from "../../assets/img/Rectangle 22.png"
 export default function PortfolioSection() {
   return (
     <>
-        <section className="portfolio-section" id="portfolio">
+        <section className="portfolio-section">
       <div className="container">
         <div className="portfolio-content">
           <PageTitle title="Portfolio"/>
