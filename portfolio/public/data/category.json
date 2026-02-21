@@ -2,19 +2,23 @@
         "portfolioCategory": [
         {
             "id": 1,
-            "title": "Website design"
+            "title": "All"
         },
         {
             "id": 2,
-            "title": "App mobile design"
+            "title": "E-commerce"
         },
         {
             "id": 3,
-            "title": "App desktop"
+            "title": "Landing Page"
         },
         {
             "id": 4,
-            "title": "Braiding"
+            "title": "Portfolio"
+        },
+        {
+            "id": 5,
+            "title": "Corporative"
         }
     ]
 }
