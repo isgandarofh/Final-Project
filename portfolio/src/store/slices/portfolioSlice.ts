@@ -1,30 +1,29 @@
 import {createSlice, type PayloadAction} from "@reduxjs/toolkit"
 
 type initialStateType = {
-    portfolio : any[],
-    count : number
+    categories : any[],
+    portfolioContent : any[]
 }
 
 const initialState : initialStateType= {
-    portfolio : [],
-    count : 0,
+    categories : [],
+    portfolioContent : [],
 }
 
 const portfolioSlice = createSlice({
     name : 'portfolio',
     initialState,
     reducers : {
-        setPortfolio(state, action : PayloadAction<any>){
-            state.portfolio = action.payload
+        setPortfolioCategory(state, action : PayloadAction<any>){
+            state.categories = action.payload
         },
-
-        setCount(state, action : PayloadAction<number>){
-            state.count = action.payload
+        setPortfolioContent(state, action : PayloadAction<any>){
+            state.portfolioContent = action.payload
         }
 
     }
 });
 
-export const {setPortfolio, setCount} = portfolioSlice.actions;
+export const {setPortfolioCategory,setPortfolioContent} = portfolioSlice.actions;
 
 export default portfolioSlice.reducer

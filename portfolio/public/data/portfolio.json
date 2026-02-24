@@ -1,18 +1,23 @@
-{
-     "portfolio": [
-        {
-            "id": 1,
-            "image": "",
-            "title": "",
-            "categoryId": 1,
-            "categoryTitle": ""
-        },
-        {
-            "id": 2,
-            "image": "",
-            "title": "",
-            "categoryId": 3,
-             "categoryTitle": ""
-        }
-    ]
-}
+[
+  {
+    "id": 1,
+    "image": "../../src/assets/img/Rectangle 21 (1).png",
+    "title": "aaaa",
+    "categoryId": 1,
+    "categoryTitle": "aaa"
+  },
+  {
+    "id": 2,
+    "image": "../../src/assets/img/Rectangle 26.png",
+    "title": "bbb",
+    "categoryId": 2,
+    "categoryTitle": "bbb"
+  },
+  {
+    "id": 2,
+    "image": "../../src/assets/img/Rectangle 22.png",
+    "title": "ccc",
+    "categoryId": 3,
+    "categoryTitle": "ccc"
+  }
+]

@@ -1,24 +1,18 @@
-{
-        "portfolioCategory": [
+[
         {
             "id": 1,
-            "title": "All"
-        },
-        {
-            "id": 2,
             "title": "E-commerce"
         },
         {
-            "id": 3,
+            "id": 2,
             "title": "Landing Page"
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "Portfolio"
         },
         {
-            "id": 5,
+            "id": 4,
             "title": "Corporative"
         }
     ]
-}

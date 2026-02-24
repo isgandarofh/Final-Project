@@ -6,9 +6,9 @@ import FirstSection from "../components/FirstSection";
 import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import { useSearchParams } from 'react-router-dom'
-import { getPortfolio } from "../services/api";
+import { getPortfolioCategory, getPortfolioContent } from "../services/api";
 import { useDispatch } from "react-redux";
-import { setPortfolio } from "../store/slices/portfolioSlice";
+import { setPortfolioCategory, setPortfolioContent } from "../store/slices/portfolioSlice";
 
 export default function Home() {
   const params = useSearchParams();
@@ -36,12 +36,21 @@ export default function Home() {
 
 
 
-  useEffect(()=>{
+  useEffect(() => {
     async function getData() {
-      const result = await getPortfolio();
-      dispatch(setPortfolio(result));
+      const result = await getPortfolioCategory();
+      dispatch(setPortfolioCategory(result));
     }
     getData();
+  }, [])
+
+  useEffect(() => {
+    async function getPortfolioData(){
+      const resultContent = await getPortfolioContent()
+      dispatch(setPortfolioContent(resultContent))
+      console.log(resultContent);
+    }
+    getPortfolioData()
   }, [])
 
 

@@ -1,106 +1,29 @@
 import "../../css/portfolio-section.css"
 import PageTitle from "../../UI/PageTitle"
 import PortfolioNavMenu from "./PortfolioNavMenu"
-import portfolioProjectsImg1 from "../../assets/img/Rectangle 21 (1).png"
-import portfolioProjectsImg2 from "../../assets/img/Rectangle 26.png"
-import portfolioProjectsImg3 from "../../assets/img/Rectangle 22.png"
+import PortfolioProjectsCard from "./PortfolioProjectsCard"
+import { useSelector } from "react-redux"
 export default function PortfolioSection() {
+
+  const portfolioContent = useSelector((state: any) => state.portfolio.portfolioContent)
   return (
     <>
-        <section className="portfolio-section">
-      <div className="container">
-        <div className="portfolio-content">
-          <PageTitle title="Portfolio"/>
-          <div className="portfolio-header">
-            <PortfolioNavMenu/>
-          </div>
-          <div className="portfolio-project-images">
+      <section className="portfolio-section">
+        <div className="container">
+          <div className="portfolio-content">
+            <PageTitle title="Portfolio" />
+            <div className="portfolio-header">
+              <PortfolioNavMenu />
+            </div>
+            <div className="portfolio-project-images">
 
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg1} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg2} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg3} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg2} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg3} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg1} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg3} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg1}alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
-            </div>
-            <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg2} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
+              {portfolioContent?.map((item: any) => (
+                <PortfolioProjectsCard image = {item.image} name = {item.title} categories={item.categoryTitle} />
+              ))}
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   )
 }

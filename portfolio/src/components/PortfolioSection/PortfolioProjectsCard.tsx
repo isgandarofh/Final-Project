@@ -1,19 +1,24 @@
-import portfolioProjectsImg1 from "../../assets/img/Rectangle 21 (1).png"
-import portfolioProjectsImg2 from "../../assets/img/Rectangle 26.png"
-import portfolioProjectsImg3 from "../../assets/img/Rectangle 22.png"
+type Props = {
+  image: string,
+  name: string,
+  categories: string,
+}
 
-export default function PortfolioProjectsCard() {
+export default function PortfolioProjectsCard({ image, name, categories }: Props) {
+
+
+
   return (
     <>
-        <div className="portfolio-project-images-content">
-              <div className="portfolio-project-images-img">
-                <img src={portfolioProjectsImg1} alt="" />
-              </div>
-              <div className="portfolio-project-images-text">
-                <div className="project-name">Name projects</div>
-                <div className="project-categories">Categories</div>
-              </div>
+      <div className="portfolio-project-images-content">
+        <div className="portfolio-project-images-img">
+          <img src={image} alt="" />
         </div>
+        <div className="portfolio-project-images-text">
+          <div className="project-name">{name}</div>
+          <div className="project-categories">{categories}</div>
+        </div>
+      </div>
     </>
   )
 }

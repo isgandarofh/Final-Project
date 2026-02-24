@@ -1,12 +1,23 @@
+import { useSelector } from "react-redux";
+
 
 export default function PortfolioNavMenu() {
+
+    const portfolioCategory = useSelector((state : any)=> state.portfolio.categories)
+
     return (
         <>
+
             <div className="portfolio-header-box portfolio-header-box-active">All</div>
-            <div className="portfolio-header-box">Website design</div>
-            <div className="portfolio-header-box">App mobile design</div>
-            <div className="portfolio-header-box">App desktop</div>
-            <div className="portfolio-header-box">Braiding</div>
+
+            {portfolioCategory?.map((item: any) => (
+                <div
+                    key={item.id}
+                    className="portfolio-header-box"
+                >
+                    {item.title}
+                </div>
+            ))}
         </>
     )
 }
