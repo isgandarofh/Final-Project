@@ -5,7 +5,8 @@ import PortfolioProjectsCard from "./PortfolioProjectsCard"
 import { useSelector } from "react-redux"
 export default function PortfolioSection() {
 
-  const portfolioContent = useSelector((state: any) => state.portfolio.portfolioContent)
+  const portfolioContent = useSelector((state: any) => state.portfolio.portfolioContent);
+  
   return (
     <>
       <section className="portfolio-section">
@@ -17,10 +18,13 @@ export default function PortfolioSection() {
             </div>
             <div className="portfolio-project-images">
 
-              {portfolioContent?.map((item: any) => (
-                <PortfolioProjectsCard image = {item.image} name = {item.title} categories={item.categoryTitle} />
-              ))}
+              {portfolioContent && portfolioContent.map((item: any) => (
+                <PortfolioProjectsCard image={item.image} name={item.title} categories={item.categoryTitle}
+                 />
+              ))
+              }
             </div>
+
           </div>
         </div>
       </section>

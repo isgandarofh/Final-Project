@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "image": "../../src/assets/img/Rectangle 21 (1).png",
-    "title": "aaaa",
-    "categoryId": 1,
-    "categoryTitle": "aaa"
-  },
-  {
-    "id": 2,
-    "image": "../../src/assets/img/Rectangle 26.png",
-    "title": "bbb",
+    "image": "../../src/assets/img/dwelloWebsitePhoto.svg",
+    "title": "Dwello Website",
     "categoryId": 2,
-    "categoryTitle": "bbb"
+    "categoryTitle": "Landing Page"
   },
   {
     "id": 2,
-    "image": "../../src/assets/img/Rectangle 22.png",
-    "title": "ccc",
+    "image": "../../src/assets/img/bakeryWebsitePhoto.svg",
+    "title": "Bakery Website",
+    "categoryId": 2,
+    "categoryTitle": "Landing Page"
+  },
+  {
+    "id": 3,
+    "image": "../../src/assets/img/bmwWebsitePhoto.svg",
+    "title": "Brand Portfolio ",
     "categoryId": 3,
-    "categoryTitle": "ccc"
+    "categoryTitle": "Portfolio"
   }
 ]
