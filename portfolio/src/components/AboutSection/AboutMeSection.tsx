@@ -5,11 +5,13 @@ import profilePhoto from "../../assets/img/Man in black suit looking confident (
 import AboutText from "./AboutText"
 import 'react-circular-progressbar/dist/styles.css';
 import SkillCircle from "./SkillCircle"
+import { useTranslation } from "react-i18next"
 
 
 
 export default function AboutMeSection() {
 
+    const {t} = useTranslation()
 
     return (
         <>
@@ -17,7 +19,7 @@ export default function AboutMeSection() {
                 <div className="container">
                     <div className="about-content">
                         <div className="about-title">
-                            <PageTitle title="About me" />
+                            <PageTitle title= {t("About me")} />
                             <SectionDesc desc="User Interface and User Experience and Also video editing" />
                         </div>
                         <div className="about-center">
