@@ -19,9 +19,9 @@ header.sticky {
   align-items: center;
 }
 
-.header-logo h2 {
+.header-logo ul li a {
   text-align: justify;
-  font-size: 30px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -30,6 +30,11 @@ header.sticky {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+}
+
+.header-logo ul {
+  list-style: none;
 }
 
 .header-menu ul {

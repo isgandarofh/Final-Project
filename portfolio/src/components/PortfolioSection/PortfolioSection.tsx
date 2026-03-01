@@ -19,7 +19,7 @@ export default function PortfolioSection() {
             <div className="portfolio-project-images">
 
               {portfolioContent && portfolioContent.map((item: any) => (
-                <PortfolioProjectsCard image={item.image} name={item.title} categories={item.categoryTitle}
+                <PortfolioProjectsCard key={item.id} image={item.image} name={item.title} categories={item.categoryTitle}
                  />
               ))
               }

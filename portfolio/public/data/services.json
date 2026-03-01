@@ -2,7 +2,8 @@
     {
         "id" : 1,
         "icon" : "",
-        "title" : "Frontend Development"
+        "title" : "Frontend Development",
+        "desc" : "React və TypeScript kimi müasir texnologiyalarla sürətli, optimallaşdırılmış və miqyaslana bilən veb tətbiqlər hazırlayıram. Təmiz kod strukturu və yüksək performans əsas prioritetimdir."
 
     }
 ]

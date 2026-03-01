@@ -15,12 +15,12 @@ export default function Header() {
     const location = useLocation();
 
     const generateActiveClassWithHome = (search: string) => {
-        
+
         switch (search) {
             case location.search:
                 return 'nav-link';
-                default:
-                    return ""
+            default:
+                return ""
         }
     }
 
@@ -40,10 +40,15 @@ export default function Header() {
                 <div className="container">
                     <div className="header-content">
                         <div className="header-logo">
-                            <h2>LOGO</h2>
+                            <ul>
+                                <li>
+                                    <a href="/">isgandarofh</a>
+                                </li>
+                            </ul>
                         </div>
                         <div className="header-menu">
                             <ul>
+
                                 <li><NavLink className={generateActiveClassWithHome('')} to="/" end>{t("Home")}</NavLink></li>
 
                                 <li><NavLink className={'nav-link'} to="/services">{t("Services")}</NavLink></li>
@@ -60,9 +65,6 @@ export default function Header() {
                                         {t("Contact me")}
                                     </NavLink>
                                 </li>
-
-                                {/* <a href="/#portfolio">{t("Portfolio")}</a></li> */}
-                                {/* <li><a href="/#contact-me">{t("Contact me")}</a></li> */}
                             </ul>
                         </div>
                         <div className="only-desktop">
@@ -99,8 +101,6 @@ export default function Header() {
                                 </ul>
                             </motion.div>}
                         </AnimatePresence>
-
-
                     </div>
                 </div>
             </header>

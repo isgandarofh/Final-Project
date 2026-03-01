@@ -9,8 +9,8 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        supportedLngs: ['en', 'az', 'ru'],
-        fallbackLng: 'en',
+        supportedLngs: ['az', 'en', 'ru'],
+        fallbackLng: 'az',
         backend: {
             loadPath: '/locales/{{lng}}.json',
         },

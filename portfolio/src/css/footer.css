@@ -11,9 +11,11 @@ footer {
   align-items: center;
 }
 
-.footer-logo h2 {
-  display: inline-flex;
-  font-size: 32px;
+
+
+.footer-logo ul li a {
+  text-align: justify;
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -22,6 +24,11 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.footer-logo ul {
+  list-style: none;
 }
 
 .footer-social {

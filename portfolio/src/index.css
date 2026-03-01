@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 @font-face {
@@ -37,9 +38,11 @@ body {
   font-family: lato;
   background-color: #121212;
 }
+
 .skill-circle {
   overflow: hidden;
 }
+
 .only-mobile {
   display: none;
 }

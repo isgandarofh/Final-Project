@@ -1,6 +1,6 @@
 .first-section {
   margin-top: 20px;
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 .first-section-content {
@@ -56,20 +56,21 @@
 }
 
 .first-section-grey-bg {
-  width: 618px;
-  height: 618px;
+  width: 518px;
+  height: 518px;
   flex-shrink: 0;
-  border-radius: 618px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.04);
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 40px;
+  top: -30px;
+  overflow: hidden;
 }
 
 .first-section-img img {
   position: absolute;
-  top: -132px;
-  right: 50px;
+  top: -50px;
+  right: 20px;
 }
 
 .social-media {
@@ -96,7 +97,7 @@
   gap: 24px;
 }
 
-.first-section-buttons :first-child {
+.first-section-buttons button {
   display: flex;
   padding: 12px 40px;
   justify-content: center;
@@ -121,7 +122,7 @@
   color: #e46400;
 }
 
-.first-section-buttons button {
+.first-section-cv-btn button {
   cursor: pointer;
   display: flex;
   padding: 12px 40px;
