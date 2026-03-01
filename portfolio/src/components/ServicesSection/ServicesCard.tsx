@@ -1,16 +1,17 @@
-import servicesCardIcon from "../../assets/img/services-cards-icon.svg"
+
 
 type ServicesCardType = {
-    title : string,
-    desc : string
+    title: string,
+    desc: string
+    icon: string
 }
 
 
-export default function ServicesCard({title,desc}: ServicesCardType) {
+export default function ServicesCard({ title, desc, icon }: ServicesCardType) {
     return (
         <>
             <div className="services-card">
-                <img src={servicesCardIcon} alt="" />
+                <img src={icon} alt="" />
                 <span>{title}</span>
                 <p>
                     {desc}

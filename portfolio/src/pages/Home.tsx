@@ -6,7 +6,7 @@ import FirstSection from "../components/FirstSection";
 import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import { useSearchParams } from 'react-router-dom'
-import { getPortfolioCategory, getPortfolioContent } from "../services/api";
+import { getPortfolioCategory, getPortfolioContent, getServicesContent } from "../services/api";
 import { useDispatch } from "react-redux";
 import { setPortfolioCategory, setPortfolioContent } from "../store/slices/portfolioSlice";
 import { setServicesContent } from "../store/slices/servicesSlice";
@@ -55,12 +55,12 @@ export default function Home() {
   }, [])
 
   useEffect(()=>{
-    async function getServicesContent() {
+    async function getServicesData(){
       const resultServicesContent = await getServicesContent()
       dispatch(setServicesContent(resultServicesContent))
       console.log(resultServicesContent);
     }
-    getServicesContent()
+    getServicesData()
   }, [])
 
 

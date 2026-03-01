@@ -1,17 +1,23 @@
+import { useSelector } from "react-redux";
 import ServicesCard from "./ServicesCard";
 
 export default function ServicesCards() {
+
+  const servicesCardsContent = useSelector((state: any) => state.services.servicesContent)
+
+
   return (
     <div className="services-cards">
-      {Array(6)
-        .fill(null)
-        .map((_, index) => (
+      {
+        servicesCardsContent && servicesCardsContent.map((item: any) => (
           <ServicesCard
-            key={index}
-            title="App Design"
-            desc="Lorem ipsum dolor sit amet .Imperdiet Lorem ipsum dolor sitamet consectetur"
+            key={item.id}
+            title={item.title}
+            desc={item.desc}
+            icon={item.icon}
           />
-        ))}
+        ))
+      }
     </div>
   );
 }

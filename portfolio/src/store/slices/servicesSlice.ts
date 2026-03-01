@@ -19,8 +19,8 @@ const servicesSlice = createSlice({
     name : 'services',
     initialState,
     reducers : {
-        setServicesContent(state,action : PayloadAction<any>){
-            state.servicesContent =action.payload
+        setServicesContent(state,action : PayloadAction<Arr[]>){
+            state.servicesContent = action.payload
         }
     }
 });

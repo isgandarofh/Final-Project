@@ -12,7 +12,7 @@ export default function ServicesSection() {
         <div className="container">
           <div className="services-content">
             <PageTitle title= {t("Services")} />
-            <SectionDesc desc={"Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam"}/>
+            <SectionDesc desc={t("services-desc")}/>
             <ServicesCards />
           </div>
         </div>
