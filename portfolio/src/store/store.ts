@@ -3,6 +3,7 @@ import portfolioSlice from './slices/portfolioSlice';
 
 export const store = configureStore({
     reducer : {
-        "portfolio" : portfolioSlice
+        "portfolio" : portfolioSlice,
+        
     }
 })

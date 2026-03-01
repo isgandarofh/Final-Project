@@ -9,6 +9,7 @@ import { useSearchParams } from 'react-router-dom'
 import { getPortfolioCategory, getPortfolioContent } from "../services/api";
 import { useDispatch } from "react-redux";
 import { setPortfolioCategory, setPortfolioContent } from "../store/slices/portfolioSlice";
+import { setServicesContent } from "../store/slices/servicesSlice";
 
 export default function Home() {
   const params = useSearchParams();
@@ -51,6 +52,15 @@ export default function Home() {
       console.log(resultContent);
     }
     getPortfolioData()
+  }, [])
+
+  useEffect(()=>{
+    async function getServicesContent() {
+      const resultServicesContent = await getServicesContent()
+      dispatch(setServicesContent(resultServicesContent))
+      console.log(resultServicesContent);
+    }
+    getServicesContent()
   }, [])
 
 

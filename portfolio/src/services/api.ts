@@ -16,3 +16,13 @@ export async function getPortfolioContent(){
         
     }
 }
+
+export async function getServicesContent(){
+    try{
+        const response = await fetch ("../../public/data/services.json");
+        return await response.json()
+    }catch(err){
+        console.log(err);
+        
+    }
+}
