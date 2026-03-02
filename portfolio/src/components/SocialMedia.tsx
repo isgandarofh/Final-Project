@@ -1,24 +1,28 @@
 import linkedinLogo from "../assets/img/linkedin-logo.svg"
-import brauzerLogo from "../assets/img/brauzer-logo.svg"
-import behanceLogo from "../assets/img/behance-logo.svg"
+import gitLogo from "../assets/img/github.png"
+import instaLogo from "../assets/img/insta-logo.svg"
 import "../css/social-media.css"
-import IconSvg from "../UI/IconSvg"
+
 
 
 export default function SocialMedia() {
     return (
         <div className="social-media">
             <div className="social-media-box">
-                <IconSvg name="insta-logo" size={20} />
+                <a target="_blank" href="https://www.instagram.com/isgandarofh">
+                    <img src={instaLogo} alt="" />
+                </a>
             </div>
             <div className="social-media-box">
-                <img src={linkedinLogo} alt="" />
+                <a target="_blank" href="https://www.linkedin.com/in/ağa-isgəndərov-5bb877344">
+                    <img src={linkedinLogo} alt="" />
+                </a>
+
             </div>
             <div className="social-media-box">
-                <img src={brauzerLogo} alt="" />
-            </div>
-            <div className="social-media-box">
-                <img src={behanceLogo} alt="" />
+                <a target="_blank" href="https://github.com/isgandarofh">
+                    <img width={23}  src={gitLogo} alt="" />
+                </a>
             </div>
         </div>
     )
