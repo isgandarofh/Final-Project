@@ -1,11 +1,12 @@
 import "../../css/about-me-section.css"
 import PageTitle from "../../UI/PageTitle"
 import SectionDesc from "../../UI/SectionDesc"
-import profilePhoto from "../../assets/img/Man in black suit looking confident (1).png"
 import AboutText from "./AboutText"
 import 'react-circular-progressbar/dist/styles.css';
 import SkillCircle from "./SkillCircle"
 import { useTranslation } from "react-i18next"
+import myProfilePhoto from "../../assets/img/2cae98a3-b2d2-4f5c-aa47-4d0773dd853b_removalai_preview.png"
+
 
 
 
@@ -27,7 +28,7 @@ export default function AboutMeSection() {
                                 <div className="about-center-img-bg">
                                     <img
                                         width="560px"
-                                        src={profilePhoto}
+                                        src={myProfilePhoto}
                                         alt=""
                                     />
                                 </div>

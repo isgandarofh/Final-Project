@@ -1,43 +1,34 @@
-import { Trans, useTranslation } from "react-i18next"
-import downloadIcon from "../assets/img/download-icon.svg"
-
-import profilePhoto from "../assets/img/Man in black suit looking confident (1).png"
-
+import { useTranslation } from "react-i18next"
 import "../css/about-me-info.css"
+import AboutText from "./AboutSection/AboutText"
+import SkillCircle from "./AboutSection/SkillCircle"
+import PageTitle from "../UI/PageTitle"
+import SectionDesc from "../UI/SectionDesc"
+import myProfilePhoto from "../assets/img/2cae98a3-b2d2-4f5c-aa47-4d0773dd853b_removalai_preview.png"
+
 
 export default function AboutMeInfo() {
   const { t } = useTranslation()
+
   return (
-    <>
-      <div className="about-me-info">
-
-        <img
-          width="400px"
-          src={profilePhoto}
-          alt=""
-        />
-        <div className="about-me-info-text">
-          <h2>{t("About me")}</h2>
-          <h4>FRONT END DEVELOPER</h4>
-          <div dangerouslySetInnerHTML={{__html : t("about-me-info-paragraph")}} />
-          {/* <Trans 
-           i18nKey="about-me-info-paragraph"
-           components={[
-            <p></p>,
-            <p></p>
-           ]}
-          /> */}
-          {/* <p>{t("about-me-info-paragraph")}</p> */}
-          
-          <a href="/data/test.pdf" target="_blank">
-            <img src={downloadIcon} alt="" />
-            Download CV
-          </a>
-
-
+    <div className="about-page-content">
+      <PageTitle title={t("About me")} />
+      <SectionDesc desc="User Interface and User Experience and Also video editing" />
+      <div className="about-center">
+        <div className="about-center-img">
+          <div className="about-center-img-bg">
+            <img
+              width="560px"
+              src={myProfilePhoto}
+              alt=""
+            />
+          </div>
         </div>
+        <AboutText />
       </div>
-    </>
+      <SkillCircle />
+
+    </div>
 
   )
 }

@@ -40,12 +40,14 @@
   border-radius: 261.5px 261.5px 12px 12px;
   background: rgba(255, 255, 255, 0.04);
   position: relative;
+  overflow: hidden;
+  top: -50px;
 }
 
 .about-center-img-bg img {
   position: absolute;
-  bottom: 0px;
-  left: -15px;
+  bottom: -45px;
+  left: -30px;
 }
 
 .about-center-text {

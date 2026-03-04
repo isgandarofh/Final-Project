@@ -106,10 +106,7 @@
 
 .contact-inputs button {
   margin-top: 30px;
-  /* display: flex; */
-  padding: 12px 40px;
-  /* justify-content: end; */
-  gap: 10px;
+  padding: 12px 40px;  gap: 10px;
   border-radius: 8px;
   border: 2px solid var(--foundation-white-dark-hover, #959595);
   color: var(--foundation-white-dark-hover, #959595);
@@ -121,8 +118,6 @@
   line-height: normal;
   letter-spacing: 0.6px;
   cursor: pointer;
-  /* margin-left: auto; */
-  /* margin-left: 870px; */
 }
 
 .contact-from-btn{
@@ -133,7 +128,6 @@
 .contact-section-bottom {
   display: flex;
   justify-content: center;
-  /* align-items: flex-end; */
 }
 
 .form-group{
@@ -151,5 +145,11 @@
 
 .contact-select-icon svg {
   color: #fff;
-  
+}
+
+
+@media (max-width : 1024px){
+  .form-group{
+    flex-direction: column;
+  }
 }
