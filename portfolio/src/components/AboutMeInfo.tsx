@@ -13,7 +13,7 @@ export default function AboutMeInfo() {
   return (
     <div className="about-page-content">
       <PageTitle title={t("About me")} />
-      <SectionDesc desc="User Interface and User Experience and Also video editing" />
+      <SectionDesc desc= {t("about-me-desc")} />
       <div className="about-center">
         <div className="about-center-img">
           <div className="about-center-img-bg">

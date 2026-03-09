@@ -21,7 +21,7 @@ export default function AboutMeSection() {
                     <div className="about-content">
                         <div className="about-title">
                             <PageTitle title= {t("About me")} />
-                            <SectionDesc desc="User Interface and User Experience and Also video editing" />
+                            <SectionDesc desc={t("about-me-desc")} />
                         </div>
                         <div className="about-center">
                             <div className="about-center-img">

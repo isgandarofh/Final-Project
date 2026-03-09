@@ -1,4 +1,4 @@
-import bannerImg from "../assets/img/top-view-desk-concept-with-orange-background.jpg"
+import bannerImg from "../assets/img/about-me-banner.jpg"
 import "../css/about-page.css"
 import { useTranslation } from "react-i18next"
 
