@@ -1,0 +1,15 @@
+.services-banner img {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-width:  100%;
+}
+
+@media (max-width: 1024px) {
+  .services-banner {
+    padding: 100px 40px 60px;
+  }
+
+  .services-banner h1 {
+    font-size: 44px;
+  }
+}

@@ -1,13 +1,11 @@
-import { useTranslation } from "react-i18next";
-import "../css/banner.css";
+import "../css/services-banner.css";
+import servicesBanner from "../assets/img/services-banner.svg"
 
 const ServicesBanner = () => {
 
-  const {t} =useTranslation()
   return (
     <section className="services-banner">
-      <h1>{t("Services")}</h1>
-      <p>{t("Frontend solutions tailored to your needs")}</p>
+      <img src={servicesBanner} alt="" />
     </section>
   );
 };
