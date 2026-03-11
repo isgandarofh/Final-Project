@@ -4,7 +4,7 @@ import AboutText from "./AboutSection/AboutText"
 import SkillCircle from "./AboutSection/SkillCircle"
 import PageTitle from "../UI/PageTitle"
 import SectionDesc from "../UI/SectionDesc"
-import myProfilePhoto from "../assets/img/2cae98a3-b2d2-4f5c-aa47-4d0773dd853b_removalai_preview.png"
+import myProfilePhoto from "../assets/img/my-profile-photo.png"
 
 
 export default function AboutMeInfo() {
