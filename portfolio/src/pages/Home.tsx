@@ -49,7 +49,6 @@ export default function Home() {
     async function getPortfolioData(){
       const resultContent = await getPortfolioContent()
       dispatch(setPortfolioContent(resultContent))
-      console.log(resultContent);
     }
     getPortfolioData()
   }, [])
@@ -58,7 +57,6 @@ export default function Home() {
     async function getServicesData(){
       const resultServicesContent = await getServicesContent()
       dispatch(setServicesContent(resultServicesContent))
-      console.log(resultServicesContent);
     }
     getServicesData()
   }, [])

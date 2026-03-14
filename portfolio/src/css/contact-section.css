@@ -26,6 +26,7 @@
 }
 
 .contact-inputs {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -34,7 +35,7 @@
 
 .contact-inputs input {
   display: flex;
-  width: 491px;
+  width: 490px;
   padding: 14px 24px;
   align-items: center;
   gap: 10px;
@@ -151,5 +152,9 @@
 @media (max-width : 1024px){
   .form-group{
     flex-direction: column;
+  }
+
+  .contact-inputs input, .service-input select,.service-input, .contact-inputs textarea{
+    width: 100%;
   }
 }
