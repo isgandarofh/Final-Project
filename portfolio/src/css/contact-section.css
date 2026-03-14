@@ -31,6 +31,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  margin-left: 100px;
 }
 
 .contact-inputs input {
