@@ -157,5 +157,10 @@
 
   .contact-inputs input, .service-input select,.service-input, .contact-inputs textarea{
     width: 100%;
+
+  }
+
+  .contact-inputs{
+    margin: 0px;
   }
 }
