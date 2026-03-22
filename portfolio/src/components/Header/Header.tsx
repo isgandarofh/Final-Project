@@ -95,8 +95,16 @@ export default function Header() {
                                         <li><Link to="/">{t("Home")}</Link></li>
                                         <li><Link to="/services">{t("Services")}</Link></li>
                                         <li><Link to="/about-me">{t("About me")}</Link></li>
-                                        <li><Link to="portfolio">{t("Portfolio")}</Link></li>
-                                        <li><Link to="contact-me">{t("Contact me")}</Link></li>
+                                        <li>
+                                            <NavLink className={generateActiveClassWithHome('?portfolio=true')} to={'/?portfolio=true'}>
+                                                {t("Portfolio")}
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink className={generateActiveClassWithHome('?contact=true')} to={'/?contact=true'}>
+                                                {t("Contact me")}
+                                            </NavLink>
+                                        </li>
                                     </ul>
                                 </ul>
                             </motion.div>}
