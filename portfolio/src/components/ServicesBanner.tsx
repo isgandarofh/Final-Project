@@ -1,5 +1,5 @@
 import "../css/services-banner.css";
-import servicesBanner from "../assets/img/services-banner.svg"
+import servicesBanner from "/img/services-banner.svg"
 
 const ServicesBanner = () => {
 

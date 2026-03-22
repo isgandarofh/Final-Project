@@ -5,7 +5,7 @@ import AboutText from "./AboutText"
 import 'react-circular-progressbar/dist/styles.css';
 import SkillCircle from "./SkillCircle"
 import { useTranslation } from "react-i18next"
-import myProfilePhoto from "../../assets/img/my-profile-photo.png"
+import myProfilePhoto from "/img/my-profile-photo.png"
 
 
 

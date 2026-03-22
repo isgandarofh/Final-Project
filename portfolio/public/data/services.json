@@ -1,37 +1,37 @@
 [
     {
         "id" : 1,
-        "icon" : "../../src/assets/img/icons8-code-50.png",
+        "icon" : "/img/icons8-code-50.png",
         "title" : "Frontend Development",
         "desc" : "React və TypeScript kimi müasir texnologiyalarla sürətli, optimallaşdırılmış və miqyaslana bilən veb tətbiqlər hazırlayıram. Təmiz kod strukturu və yüksək performans əsas prioritetimdir."
     },
     {
         "id" : 2,
-        "icon" : "../../src/assets/img/icons8-web-50.png",
+        "icon" : "/img/icons8-web-50.png",
         "title" : "UI / UX İmplementasiyası",
         "desc" : "Figma və digər dizayn alətlərindən hazırlanmış interfeysləri piksel-dəqiqliyi ilə kodlaşdırır və interaktiv istifadəçi təcrübəsi yaradıram."
     },
     {
         "id" : 3,
-        "icon" : "../../src/assets/img/icons8-responsive-50.png",
+        "icon" : "/img/icons8-responsive-50.png",
         "title" : "Responsive Veb Dizayn",
         "desc" : "Mobil-first yanaşma ilə bütün cihazlara uyğun, adaptiv və stabil işləyən interfeyslər hazırlayıram."
     },
     {
         "id" : 4,
-        "icon" : "../../src/assets/img/icons8-ui-50.png",
+        "icon" : "/img/icons8-ui-50.png",
         "title" : "Component-Based Architecture",
         "desc" : "Yenidən istifadə oluna bilən və strukturlaşdırılmış UI komponentləri quraraq layihələrin miqyaslanmasını və idarə edilməsini asanlaşdırıram."
     },
     {
         "id" : 5,
-        "icon" : "../../src/assets/img/icons8-performance-50.png",
+        "icon" : "/img/icons8-performance-50.png",
         "title" : "Performans Optimizasiyası",
         "desc" : "Kod bölünməsi, lazy loading və optimallaşdırma metodları ilə tətbiqlərin sürətini və istifadəçi təcrübəsini maksimum səviyyəyə çatdırıram."
     },
     {
         "id" : 6,
-        "icon" : "../../src/assets/img/icons8-api-50.png",
+        "icon" : "/img/icons8-api-50.png",
         "title" : "API İnteqrasiyası",
         "desc" : "REST API və digər servis inteqrasiyaları vasitəsilə dinamik və real vaxt rejimində işləyən tətbiqlər qururam."
     }

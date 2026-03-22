@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import downloadIcon from "../../assets/img/download-icon.svg"
+import downloadIcon from "/img/download-icon.svg"
 
 export default function AboutText() {
     const {t} = useTranslation()

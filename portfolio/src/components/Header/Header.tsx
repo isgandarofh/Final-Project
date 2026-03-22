@@ -1,5 +1,5 @@
 import "../../css/header.css"
-import menuIcon from "../../assets/img/icons8-menu-50 (2).png"
+import menuIcon from "/img/icons8-menu-50 (2).png"
 import { useEffect, useRef, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { motion, AnimatePresence } from "motion/react"

@@ -1,9 +1,9 @@
 import "../css/techstack-banner.css"
-import figmaLogo from "../assets/img/icons8-figma-48.png"
-import bootstrapLogo from "../assets/img/icons8-bootstrap-48.png"
-import reactLogo from "../assets/img/icons8-react-48.png"
-import typeScriptLogo from "../assets/img/icons8-typescript-48.png"
-import npmLogo from "../assets/img/icons8-npm-48.png"
+import figmaLogo from "/img/icons8-figma-48.png"
+import bootstrapLogo from "/img/icons8-bootstrap-48.png"
+import reactLogo from "/img/icons8-react-48.png"
+import typeScriptLogo from "/img/icons8-typescript-48.png"
+import npmLogo from "/img/icons8-npm-48.png"
 export default function TechStackBanner() {
     const techStack = [
         { logo: figmaLogo },

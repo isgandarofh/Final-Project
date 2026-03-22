@@ -1,6 +1,6 @@
 import "../css/first-section.css"
-import headerTextBg from "../assets/img/first-section-org-bg.svg"
-import myProfilePhoto from "../assets/img/my-profile-photo.png"
+import headerTextBg from "/img/first-section-org-bg.svg"
+import myProfilePhoto from "/img/my-profile-photo.png"
 import HireMeButton from "../UI/HireMeButton"
 import { useTranslation } from "react-i18next"
 import SocialMedia from "./SocialMedia"

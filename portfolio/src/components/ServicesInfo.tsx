@@ -1,5 +1,5 @@
 import "../css/services-info.css"
-import servicesInfoPhoto from "../assets/img/frontendphoto.png"
+import servicesInfoPhoto from "/img/frontendphoto.png"
 import { useTranslation } from "react-i18next"
 export default function ServicesInfo() {
   const {t} = useTranslation()

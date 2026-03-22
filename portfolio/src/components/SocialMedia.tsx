@@ -1,6 +1,6 @@
-import linkedinLogo from "../assets/img/linkedin-logo.svg"
-import gitLogo from "../assets/img/github.png"
-import instaLogo from "../assets/img/insta-logo.svg"
+import linkedinLogo from "/img/linkedin-logo.svg"
+import gitLogo from "/img/github.png"
+import instaLogo from "/img/insta-logo.svg"
 import "../css/social-media.css"
 
 

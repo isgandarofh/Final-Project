@@ -1,9 +1,9 @@
 import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
-import figmaLogo from "../../assets/img/Vector (9).png"
-import reactLogo  from "../..//assets/img/atom (1).png"
-import tsLogo from "../../assets/img/typescript.png"
-import jsLogo from "../../assets/img/js.png"
-import githubLogo from "../..//assets/img/github.png"
+import figmaLogo from "/img/Vector (9).png"
+import reactLogo  from "/img/atom (1).png"
+import tsLogo from "/img/typescript.png"
+import jsLogo from "/img/js.png"
+import githubLogo from "/img/github.png"
 
 
 export default function SkillCircle() {
