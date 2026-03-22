@@ -68,6 +68,7 @@ body {
   line-height: 160%; /* 32px */
   letter-spacing: 1px;
   text-transform: capitalize;
+  margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 1300px) {
