@@ -44,6 +44,7 @@ export default function Home() {
     }
     getData();
   }, [])
+  
 
   useEffect(() => {
     async function getPortfolioData(){
@@ -52,6 +53,7 @@ export default function Home() {
     }
     getPortfolioData()
   }, [])
+
 
   useEffect(()=>{
     async function getServicesData(){

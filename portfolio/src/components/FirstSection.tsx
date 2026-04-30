@@ -21,7 +21,7 @@ export default function FirstSection() {
                             <SocialMedia />
                             <div className="first-section-buttons">
                                 <HireMeButton />
-                                <a className="first-section-cv-btn" href="/data/Aga-İsgenderov-Cv-(Front end).pdf" target="_blank">
+                                <a className="first-section-cv-btn" href="/data/Aga-Isgenderov-Cv-(Front end).pdf" target="_blank">
                                     <button>{t('download cv')}</button>
                                 </a>
                             </div>

@@ -13,7 +13,6 @@ export async function getPortfolioContent(){
         return await response.json()
     }catch(err){
         console.log(err);
-        
     }
 }
 

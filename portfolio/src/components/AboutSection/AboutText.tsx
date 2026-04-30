@@ -8,7 +8,7 @@ export default function AboutText() {
             <p>
                 {t("about-section-text")}
             </p>
-            <a href="/data/Aga-İsgenderov-Cv-(Front end).pdf" target="_blank">
+            <a href= "/data/Aga-Isgenderov-Cv-(Front end).pdf" target="_blank">
                 <img src={downloadIcon} alt="" />
                 Download CV
             </a>
